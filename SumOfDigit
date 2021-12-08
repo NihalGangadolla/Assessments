@@ -1,0 +1,48 @@
+
+Write a program to the find the Sum Of Digit
+
+ANSWER
+
+public class SumOfDigit
+{
+    static void sumOfAllDigits(int inputNumber)
+    {
+        
+ 
+        int copyOfInputNumber = inputNumber;
+ 
+         
+ 
+        int sum = 0;
+ 
+        while (copyOfInputNumber != 0)
+        {
+            //Getting last digit of the input number
+ 
+            int lastDigit = copyOfInputNumber%10;
+ 
+           
+ 
+            sum = sum + lastDigit;
+ 
+            //Removing last digit from the input number
+ 
+            copyOfInputNumber = copyOfInputNumber/10;
+        }
+ 
+       
+ 
+        System.out.println("Sum Of All Digits In "+inputNumber+" = "+sum);
+    }
+ 
+    public static void main(String[] args)
+    {
+        sumOfAllDigits(47862);
+ 
+        sumOfAllDigits(416872);
+ 
+        sumOfAllDigits(5674283);
+ 
+        sumOfAllDigits(475496215);
+    }
+}
