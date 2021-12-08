@@ -5,6 +5,7 @@ Write a program to print the following triangle of binary digits.
 1 2 3 4
 1 2 3 4 5
 
+ANSWEER
 
 import java.util.Scanner;
 
