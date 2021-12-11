@@ -1,0 +1,36 @@
+package javapractise;
+import java.util.Scanner;
+
+class Rectangle {
+
+    int area;
+    int volume;
+
+    Rectangle(int l, int w, int h) {
+        area = l * w;
+         volume = l* w *h;
+    }
+
+    void display() {
+        System.out.println("Area of rectangle is: " + area);
+        System.out.println("Volume of rectangle is:" + volume);
+    }
+}
+
+class Main {
+
+    public static void main(String args[]) {
+        int length, width,height;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter length of rectangle:");
+        length = sc.nextInt();
+        System.out.print("Enter width of rectangle:");
+        width = sc.nextInt();
+        System.out.println("Enter height of rectangle");
+        height = sc.nextInt();
+
+        Rectangle t = new Rectangle(length, width,height);
+        t.display();
+    }
+}
