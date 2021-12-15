@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class ThreeIntegers {
+
+	public static void main(String[] args) 
+	{
+		
+		int a,b,c,sum,avg,product;
+		
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("ENTER THE FIRST NUMBER");
+		a = sc.nextInt();
+		System.out.println("ENTER THE SECOND NUMBER");
+		b = sc.nextInt();
+		System.out.println("ENTER THE THIRD NUMBER");
+		c = sc.nextInt();
+		  sc.close();
+      
+        //**************SUMMATION*****************
+
+		sum = a + b + c;
+		System.out.println("THE SUMMATION OF THREE NUMBERS IS " +sum);;
+	
+		//****************AVERAGE*****************
+		
+		avg =(a+b+c)/3;
+		System.out.println("THE AVERAGE OF THREE NUMBERS IS " +avg);
+		
+		//***************PRODUCT*****************
+		
+		product = a*b*c;
+		System.out.println("THE PRODUCT OF THREE NUMBERS IS " + product);
+		
+		//**************SMALLEST AND LARGEST*************
+		
+		if(a<=b && a<=c){
+		    System.out.println("\n The Smallest number is: "+a);
+		}
+		else if(b<=a && b<=c){
+		    System.out.println("\n The Smallest number is: "+b);
+		}
+		else{
+		    System.out.println("\n The Smallest number is: "+c);
+		}
+		if(a>=b && a>=c){
+		    System.out.println("\n The Smallest number is: "+a);
+		}
+		else if(b>=a && b>=c){
+		    System.out.println("\n The Smallest number is: "+b);
+		}
+		else{
+		    System.out.println("\n The largest number is: "+c);
+		}
+		}
+		
+		
+		
+	}
+
