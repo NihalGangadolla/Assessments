@@ -1,0 +1,20 @@
+public class IgnoreCases
+{
+	public static void main(String[]args)
+	{
+		String s1 = "NIHAL";
+		String s2 = "nihal";
+		String s3 = "Nihal";  
+		
+		boolean result = s1.equalsIgnoreCase(s3);
+		
+		System.out.println("s1 is equal to s3 " +result);
+		
+		boolean result2 = s2.equalsIgnoreCase(s3);
+		
+		System.out.println("s2 is equal to s3 " +result2);
+		
+			
+	}
+
+}
