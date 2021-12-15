@@ -1,0 +1,19 @@
+public class CheckString 
+{
+public static void main(String [] args)
+{
+	String s1 = "My name is Nihal";
+	String s2 = "My name is Chintu";
+	
+	
+	if (s1 == s2)
+	{
+		System.out.println(" Both Strings are same");
+	}
+	else
+	{
+		System.out.println("Both Strings are different");
+	}
+			
+	
+}
